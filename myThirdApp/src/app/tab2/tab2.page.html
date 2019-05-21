@@ -1,9 +1,12 @@
 <ion-header>
-  <ion-toolbar>
+  <!--<ion-toolbar>
     <ion-title>
       Tab Two
     </ion-title>
-  </ion-toolbar>
+  </ion-toolbar>-->
+  <div class = "bar bar-header">
+      <h1 class = "title">Login Link</h1>
+   </div>
 </ion-header>
 
 <ion-content>
@@ -11,4 +14,317 @@
     <p>
       If you want to login inside the Mswipe Mail id, <a href="http://webmail.mswipe.in/appsuite/#!!&app=io.ox/mail&folder=default0/INBOX">Prabhat</a> will be your guide.
     </p>
+
+
+    <div class="list">
+      <div class="item item-divider">Item-Divider1</div>
+      
+      <div class="item">Item1</div>
+  <div class="item">Item2</div>
+  <div class="item">Item3</div>
+  <div class="item">Item4</div></div>
+
+  <div class="item item-divider">Item Divider2</div>
+  <div class="item">Item1</div>
+  <div class="item">Item2</div>
+  <div class="item">Item3</div>
+  <div class="item">Item4</div>
+
+    <!--The below CODE Deals with the creation of LABLE -->
+
+
+  <div class = "list">
+      <label class = "item item-input item-stacked-label">
+         <span class = "input-label">Label 1</span>
+         <input type = "text" placeholder = "Placeholder 1" />
+      </label>
+   
+      <label class = "item item-input item-stacked-label">
+         <span class = "input-label">Label 2</span>
+         <input type = "text" placeholder = "Placeholder 2" />
+      </label>
+   </div>
+
+   <!--  <label class = "toggle">
+      <input type = "checkbox" />
+      <div class = "track">
+         <div class = "handle"></div>
+      </div>
+   </label>
+   
+   <br>
+   
+   <label class = "toggle">
+      <input type = "checkbox" />
+      <div class = "track">
+         <div class = "handle"></div>
+      </div>
+   </label>-->
+  <!--  <ul class = "list">
+      <li class = "item item-toggle">
+         Toggle 1
+         <label class = "toggle toggle-assertive">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle 2
+         <label class = "toggle toggle-positive">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle 3
+         <label class = "toggle toggle-calm">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle 4
+         <label class = "toggle toggle-energized">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   </ul>
+
+   <ul class = "list">
+      <li class = "item item-toggle">
+         Toggle Light
+         <label class = "toggle  toggle-light">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Stable
+         <label class = "toggle toggle-stable">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Positive
+         <label class = "toggle toggle-positive">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Calm
+         <label class = "toggle toggle-calm">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Balanced
+         <label class = "toggle toggle-balanced">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Energized
+         <label class = "toggle toggle-energized">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Assertive
+         <label class = "toggle toggle-assertive">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Royal
+         <label class = "toggle  toggle-royal">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   
+      <li class = "item item-toggle">
+         Toggle Dark
+         <label class = "toggle toggle-dark">
+            <input type = "checkbox" />
+            <div class = "track">
+               <div class = "handle"></div>
+            </div>
+         </label>
+      </li>
+   </ul>-->
+     <!--The below CODE Deals with the creation of TOGGLE BUTTON Click-->
+
+   <ion-toggle color="primary"></ion-toggle>
+   <br>
+
+   <ion-toggle color="secondary"></ion-toggle>
+   <br>
+
+   <ion-toggle color="danger"></ion-toggle>
+   <br>
+
+   <ion-toggle color="light"></ion-toggle>
+   <br>
+
+   <ion-toggle color="dark"></ion-toggle>
+   <br>
+
+<ion-toggle checked></ion-toggle>
+
+<ion-list>
+    <ion-item>
+      <ion-label>Pepperoni</ion-label>
+      <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Sausage</ion-label>
+      <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+    </ion-item>
+  </ion-list>
+  <!--The below CODE Deals with the creation of CHECKBOX Selection-->
+
+  <ion-checkbox color="primary"></ion-checkbox>
+  <ion-icon name="baseball"></ion-icon>
+  <br>
+  <ion-checkbox color="secondary"></ion-checkbox>
+  <ion-icon name="apps"></ion-icon>
+
+  <br>
+
+  <ion-checkbox color="danger"></ion-checkbox>
+  <ion-icon name="fitness"></ion-icon>
+  <br>
+
+  <ion-checkbox color="light"></ion-checkbox>
+  <ion-icon name="play-circle"></ion-icon>
+  <br>
+
+  <ion-checkbox color="dark"></ion-checkbox>
+  <ion-icon name="globe"></ion-icon>
+<br>
+
+<!--<ion-list>
+  <ion-list-header>Single Selection</ion-list-header>
+  <ion-item>
+    <ion-lable>Gender</ion-lable>
+   <ion-select placeholder="Select one">
+<ion-select-option value="f">Female</ion-select-option>
+<ion-select-option value="m">Male</ion-select-option>
+   </ion-select>
+  
+  </ion-item>
+
+  <ion-item>
+    <ion-lable>Hair Color</ion-lable>
+    <ion-select-opotion value="brown">Brown</ion-select-opotion>
+    <ion-select-option value="black">Black</ion-select-option>
+    <ion-select-option value="red">Red</ion-select-option>
+  </ion-item>
+</ion-list>-->
+
+
+<!--The below CODE Deals with the creation of Drop Down List Selection for sngle select-->
+<ion-list>
+    <ion-list-header>Single Selection</ion-list-header>
+  
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Hair Color</ion-label>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="brown">Brown</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+
+  <!--The below CODE Deals with the creation of Drop Down List Selection for Multiple  select-->
+
+  <ion-list>
+      <ion-list-header>Multiple Selection</ion-list-header>
+    
+      <ion-item>
+        <ion-label>Toppings</ion-label>
+        <ion-select multiple="true" cancelText="Nah" okText="Okay!">
+          <ion-select-option value="bacon">Bacon</ion-select-option>
+          <ion-select-option value="olives">Black Olives</ion-select-option>
+          <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+          <ion-select-option value="peppers">Green Peppers</ion-select-option>
+          <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+          <ion-select-option value="onions">Onions</ion-select-option>
+          <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+          <ion-select-option value="pineapple">Pineapple</ion-select-option>
+          <ion-select-option value="sausage">Sausage</ion-select-option>
+          <ion-select-option value="Spinach">Spinach</ion-select-option>
+        </ion-select>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Pets</ion-label>
+        <ion-select multiple="true">
+          <ion-select-option value="bird" selected>Bird</ion-select-option>
+          <ion-select-option value="cat">Cat</ion-select-option>
+          <ion-select-option value="dog" selected>Dog</ion-select-option>
+          <ion-select-option value="honeybadger">Honey Badger</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+
 </ion-content>
