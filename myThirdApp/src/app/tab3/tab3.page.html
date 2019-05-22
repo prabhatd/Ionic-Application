@@ -56,7 +56,7 @@
 
   </div>-->
 
-  <ion-button class="button button-stable" (click)="presentActionSheet()">Registration</ion-button>
+  <ion-button class="button button-stable hide-on-keyboard-open" (click)="presentActionSheet()" >Registration</ion-button>
 
   <br>
 <!--   <ion-button class="button1 button-stable" (click)="presentActionSheet()">Action Sheet</button>
@@ -152,5 +152,73 @@
         <ion-item>
           <ion-range dualKnobs="true" min="21" max="72" step="3" snaps="true"></ion-range>
         </ion-item>
+
+        <!-- <ion-list show-delete = "showDelete1">
+            <ion-item>
+               <ion-delete-button class = "ion-minus-circled"></ion-delete-button>
+               Item 1
+            </ion-item>
+           
+            <ion-item>
+               <ion-delete-button class = "ion-minus-circled"></ion-delete-button>
+               Item 2
+            </ion-item>
+         </ion-list>
+         
+         <ion-toggle ng-model = "showDelete2">
+            Show Delete 2
+         </ion-toggle> -->
+<ion-list>
+    <ion-reorder-group>
+
+        <ion-item>
+          <ion-label>
+            Item 1
+          </ion-label>
+          <ion-reorder slot="end"></ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>
+            Item 2 (default ion-reorder slot="start")
+          </ion-label>
+          <ion-reorder slot="start"></ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>
+            Item 3 (custom ion-reorder)
+          </ion-label>
+          <ion-reorder slot="end">
+            <ion-icon name="pizza"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>
+            Item 4 (custom ion-reorder slot="start")
+          </ion-label>
+          <ion-reorder slot="start">
+            <ion-icon name="pizza"></ion-icon>
+          </ion-reorder>
+        </ion-item>
+  
+        <ion-reorder>
+          <ion-item>
+            <ion-label>
+              Item 5 (the whole item can be dragged)
+            </ion-label>
+            </ion-item>
+        </ion-reorder>
+  
+      </ion-reorder-group>
+    </ion-list>
+
+   <!--  <ion-list>
+      <ion-item>
+      <ion-option-button class="button-positive">Button 1</ion-option-button>
+      <ion-option-button class="button-assertive">Button 2</ion-option-button>
+    </ion-item>
+    </ion-list> -->
 </ion-content>
 
