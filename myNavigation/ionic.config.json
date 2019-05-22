@@ -1,0 +1,7 @@
+{
+  "name": "myNavigation",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
